@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refill_calculator</title>
+    <script src="multiselect-dropdown.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <select id="selected-months" name="select" multiple multiselect-search = "true">
+            <!-- <option value="1">first</option> -->
+        </select>
+        <div class="month-header">
+            <div class="month-container" id="days-each-month">
+                <!-- <div class="days-in-month">test</div> -->
+            </div>
+            <div class="month-container" id="month-each-year">
+                <!-- <div class="month">มกราคม</div> -->
+            </div>
+        </div>
+        <div class="totalDays">
+            <span>จำนวนวันรวมทั้งหมด </span><span id="totalDays">0</span><span> วัน</span>
+        </div>
+        <div class="calFirstDayDefault">
+            <p>คำนวณวันแรกเป็น</p>
+            <select class="defaultDays" id="defaultDays">
+                <option value="30">30 วัน</option>
+                <option value="35">35 วัน</option>
+                <option value="40" selected>40 วัน</option>
+            </select>
+        </div>
+        <div class="calculate-table-main-flex">
+            <div class="calculate-table-flex" id="calculate-table-initial">
+                <div class="calculate-table-item" id="inputTabPerDayColumn">
+                    <div class="header round-left">จำนวนเม็ดต่อวัน</div>
+                        <input type="number" class="content 0">
+                        <input type="number" class="content 1">
+                        <input type="number" class="content 2">
+                        <input type="number" class="content 3">
+                        <input type="number" class="content 4">
+                        <input type="number" class="content 5">
+                        <input type="number" class="content 6">
+                </div>
+                <div class="calculate-table-item" id="totalTabColumn">
+                    <div class="header">จำนวนเม็ดทั้งหมด</div>
+                    <div class="content 0">-</div>
+                    <div class="content 1">-</div>
+                    <div class="content 2">-</div>
+                    <div class="content 3">-</div>
+                    <div class="content 4">-</div>
+                    <div class="content 5">-</div>
+                    <div class="content 6">-</div>
+                </div>
+            </div>
+            <div class="calculate-table-flex" id="calculate-table"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
