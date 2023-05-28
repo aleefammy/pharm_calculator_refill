@@ -27,7 +27,7 @@
 } */
 .month-container{
     display: grid;
-    grid-template-columns: repeat(12,1fr);
+    grid-template-columns: repeat(12,auto);
     column-gap: 0.3rem;
 }
 .month-container > div{
@@ -76,7 +76,7 @@
   /* grid-template-columns: repeat(12,auto); */
 }
 .header{
-  padding: 0.5rem;
+  padding: 0.2rem;
   background-color: salmon;
 }
 .round-left{
@@ -86,7 +86,7 @@
   border-radius: 0 10px 0 0 !important;
 }
 .content{
-  padding: 0.5rem;
+  padding: 0.2rem;
   border-bottom: 1px solid brown;
 }
 
